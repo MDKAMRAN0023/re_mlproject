@@ -219,3 +219,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific files
+logs/
+catboost_info/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+# Local testing files
+gemini_test.py

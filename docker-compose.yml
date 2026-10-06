@@ -1,0 +1,8 @@
+services:
+  student-performance:
+    build: .
+    container_name: student-performance-container
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
