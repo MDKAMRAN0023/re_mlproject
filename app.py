@@ -73,6 +73,10 @@ def predict_datapoint():
 # Gemini Chatbot
 # =========================
 
+@app.route('/healthz')
+def healthz():
+    return jsonify({"status": "healthy"}), 200
+
 @app.route('/chatbot')
 def chatbot_page():
     return render_template('chatbot.html')
